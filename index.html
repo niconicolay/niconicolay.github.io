@@ -6,36 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0" />
     <title>Головна сторінка</title>
+    <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
-    <nav style="display: flex; align-items: center; height: 30px; border-color: black; border-style: groove; ">
+    <nav class="navbar" >
         <div style="margin-right: auto;margin-left: 20px;"><a><h1>Верхній колонтитул</h1></a></div>
-        <ul style="margin-left: auto; "><a href="activities.html">Заходи</a></ul>
-        <ul><a href="news.html">Новини</a></ul>
-        <ul style="margin-right: 20px; "><a href="subjects.html">Уроки</a></ul>
+
+        <ul class="list_nav">
+            <li><a class="link_nav" href="activities.html">Заходи</a></li>
+            <li><a class="link_nav" href="news.html">Новини</a></li>
+            <li><a class="link_nav" href="subjects.html">Уроки</a></li>
+        </ul>
     </nav>
 
-    <div style="display: flex; height: 500px;  ">
-        <div style="flex-grow: 1; border-color: black; border-style: groove; text-align: center;">
+    <div class="content"">
+        <div class="column_content" id="content-left">
             <br>
             <h3>Ліва колонка</h3>
             <br>
         </div>
-        <div style="flex-grow: 3; border-color: black; border-style: groove; text-align: center;">
+        <div class="column_content" id="content-center">
             <br>
             <h3>Основний вміст</h3>
             <br>
         </div>
-        <div style="flex-grow: 1; border-color: black; border-style: groove; text-align: center;">
+        <div class="column_content" id="content-right">
             <br>
             <h3>Права колонка</h3>
             <br>
         </div>
     </div>
 
-    <footer
-        style="display: flex; align-items: center; height: 30px; justify-content: center; border-color: black; border-style: groove;">
+    <footer class="footer">
         <div>
             <h3>Нижній колонтитул</h3>
         </div>
